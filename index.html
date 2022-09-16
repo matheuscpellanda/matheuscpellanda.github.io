@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='author' content='Matheus Camargo Pellanda'>
+    <link rel='stylesheet' href='css/style.css'>
+    <title>Meu portifólio</title>
+    <link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <div class="primary-form">
+            <div class="front-cover-form">
+                <img class="image-front-cover" src="images/imagem-capa.png" alt="Matheus Camargo">      
+                <h1 class="hero-title">Matheus Camargo Pellanda</h1>
+                <p>"Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua."</p>
+            </div>
+            <div class="menu-form">
+                <div class="menu-btn" id="btn-skill"><h2 class="btn-titles">Habilidades</h2></div>
+                <div class="menu-btn" id="btn-study"><h2 class="btn-titles">Formações</h2></div>
+                <div class="menu-btn" id="btn-work"><h2 class="btn-titles">Carreira Profissional</h2></div>
+                <div class="menu-btn" id="btn-dev"><h2 class="btn-titles">Carreira Dev</h2></div>            
+            </div>
+        </div>
+        <div class="secondary-form" id="slide-forms">
+            <div class="content-form" id="skill-form">
+                <h2 class="hero-title2">Habilidades</h2>
+            </div>
+            <div class="content-form" id="study-form">
+                <h2 class="hero-title2">Formações</h2>            
+            </div>
+            <div class="content-form" id="work-form">
+                <h2 class="hero-title2">Carreira Profissional</h2>            
+            </div>
+            <div class="content-form" id="dev-form">
+                <h2 class="hero-title2">Carreira Dev</h2>            
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+		$("#btn-skill").click(
+            function() {
+                if(document.getElementById("slide-forms").style.display != 'block'){                    
+                    $("#slide-forms").animate({width: 'toggle', opacity: 'toggle'}, 'fast');                  
+                };
+                if(document.getElementById("skill-form").style.display != 'block'){                    
+                    $("#skill-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };                
+                if(document.getElementById("study-form").style.display == 'block'){                    
+                    $("#study-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("work-form").style.display == 'block'){                    
+                    $("#work-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("dev-form").style.display == 'block'){                    
+                    $("#dev-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };                
+            }
+        );
+        $("#btn-study").click(
+            function() {
+                if(document.getElementById("slide-forms").style.display != 'block'){                    
+                    $("#slide-forms").animate({width: 'toggle', opacity: 'toggle'}, 'fast');                  
+                };
+                if(document.getElementById("study-form").style.display != 'block'){                    
+                    $("#study-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("skill-form").style.display == 'block'){                    
+                    $("#skill-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("work-form").style.display == 'block'){                    
+                    $("#work-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("dev-form").style.display == 'block'){                    
+                    $("#dev-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };                
+            }
+        );
+        $("#btn-work").click(
+            function() {
+                if(document.getElementById("slide-forms").style.display != 'block'){                    
+                    $("#slide-forms").animate({width: 'toggle', opacity: 'toggle'}, 'fast');                  
+                };
+                if(document.getElementById("work-form").style.display != 'block'){                    
+                    $("#work-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("study-form").style.display == 'block'){                    
+                    $("#study-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("skill-form").style.display == 'block'){                    
+                    $("#skill-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("dev-form").style.display == 'block'){                    
+                    $("#dev-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+            }
+        );
+        $("#btn-dev").click(
+            function() { 
+                if(document.getElementById("slide-forms").style.display != 'block'){                    
+                    $("#slide-forms").animate({width: 'toggle', opacity: 'toggle'}, 'fast');                  
+                };
+                if(document.getElementById("dev-form").style.display != 'block'){                    
+                    $("#dev-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };               
+                if(document.getElementById("study-form").style.display == 'block'){                    
+                    $("#study-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("work-form").style.display == 'block'){                    
+                    $("#work-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+                if(document.getElementById("skill-form").style.display == 'block'){                    
+                    $("#skill-form").animate({height: 'toggle', opacity: 'toggle'}, 'fast');                    
+                };
+            }
+        );
+    </script>
+</body>
+</html>
