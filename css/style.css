@@ -132,6 +132,7 @@ p{
     margin: 1rem;
     font-size: 1.2rem;
     line-height: 2rem;
+    text-align: start;
 }
 h3{
     margin: auto;
