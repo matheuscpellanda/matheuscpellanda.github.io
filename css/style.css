@@ -9,9 +9,7 @@ body{
     background-color: rgb(225, 225, 225);
     text-align: center;
 }
-/*------ Geral ------*/
-/*------ Forms ------*/
-.row{
+main{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -23,6 +21,8 @@ body{
     margin: auto;
     padding: 2%;
 }
+/*------ Geral ------*/
+/*------ Forms ------*/
 .primary-form{
     position: relative;
     display: flex;
@@ -83,6 +83,12 @@ body{
     /* background-color: rgb(255, 0, 170);  */
     margin: 0 auto;
 }
+article{
+    /* background-color: red; */
+    height: 100%;
+    margin-top: 2%;
+    padding: 0 5%;
+}
 /*------ Forms ------*/
 /*------ Images ------*/
 .image-front-cover{    
@@ -103,7 +109,7 @@ body{
     color: darkred;
     line-height: 50px;
     font-size: 45px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 2% 0 0 0;
 }
 h2{
@@ -118,6 +124,23 @@ p{
     font-weight: 400;
     font-style: italic;
     margin: auto;
+}
+.content-form ul{
+    text-align: start;
+}
+.content-form li{
+    margin: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+h3{
+    margin: auto;
+    text-align: start;
+    color: darkred;
+    line-height: 1.7rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2% 0 0 0;
 }
 /*------ Texts ------*/
 /*------ Buttons ------*/
