@@ -5,4 +5,4 @@
 ### Flutter
 
 #### [LinkedIn](https://www.linkedin.com/in/matheus-camargo-pellanda-a042881b0/)
-#### [GitHub](https://github.com/matheuscpellanda) :octocat
+#### [GitHub](https://github.com/matheuscpellanda) :octocat:
