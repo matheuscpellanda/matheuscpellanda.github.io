@@ -1,0 +1,170 @@
+:root {
+  --icon-size: 55px;
+  --icon-size-neg: -55px;
+}
+
+.orbitate {
+  animation: animate_orbit 60s linear infinite;
+  animation-fill-mode: both;
+  border-radius: 50%;
+  height: clamp(0px, 40svh, 610px);
+  max-height: clamp(0px, 47svh, 610px);
+  max-width: clamp(0px, 47svh, 610px);
+  position: absolute;
+  width: clamp(0px, 40svh, 610px);
+  z-index: 1;
+}
+
+.orbitate-icon {
+  animation: animate_rotate 60s linear infinite;
+  animation-fill-mode: both;
+  height: var(--icon-size);
+  position: absolute;
+  width: var(--icon-size);
+  z-index: 0;
+}
+
+.orbitate-icon:nth-child( 1 ) {
+  left: calc(50% - var(--icon-size) / 2);
+  top: calc(var(--icon-size-neg) / 2);
+}
+
+.orbitate-icon:nth-child( 2 ) {
+  bottom: calc(var(--icon-size-neg) / 2);
+  left: calc(50% - var(--icon-size) / 2);
+}
+
+.orbitate-icon:nth-child( 3 ) {
+  bottom: calc(50% - var(--icon-size) / 2);
+  left: calc(var(--icon-size-neg) / 2);
+}
+
+.orbitate-icon:nth-child( 4 ) {
+  bottom: calc(50% - var(--icon-size) / 2);
+  right: calc(var(--icon-size-neg) / 2);
+}
+
+.orbitate-icon:nth-child( 5 ) {
+  right: 0;
+  top: 0;
+}
+
+.orbitate-icon:nth-child( 6 ) {
+  left: 0;
+  top: 0;
+}
+
+.orbitate-icon:nth-child( 7 ) {
+  bottom: 0;
+  left: 0;
+}
+
+.orbitate-icon:nth-child( 8 ) {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes animate_orbit {
+
+  0% {
+    height: clamp(400px, 67svh, 610px);
+    width: clamp(450px, 75svh, 610px);
+  }
+
+  14% {
+    height: clamp(450px, 72svh, 610px);
+    width: clamp(450px, 68svh, 610px);
+  }
+
+  26.5% {
+    height: clamp(450px, 72svh, 610px);
+    width: clamp(450px, 68svh, 610px);
+  }
+
+  38.5% {
+    height: clamp(450px, 71svh, 610px);
+    width: clamp(450px, 70svh, 610px);
+  }
+
+  50% {
+    height: clamp(450px, 71svh, 610px);
+    width: clamp(450px, 70svh, 610px);
+  }
+
+  64% {
+    height: clamp(450px, 74svh, 610px);
+    width: clamp(450px, 70svh, 610px);
+  }
+
+  89% {
+    height: clamp(450px, 70svh, 610px);
+    width: clamp(450px, 74svh, 610px);
+  }
+
+  100% {
+    height: clamp(400px, 67svh, 610px);
+    rotate: 1turn;
+    width: clamp(450px, 75svh, 610px);
+  }
+}
+
+@keyframes animate_rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  75% {
+    transform: rotate(-270deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@media only screen and ( min-width : 1200px ) {
+
+  :root {
+    --icon-size: 9svh;
+    --icon-size-neg: -9svh;
+  }
+
+  .orbitate {
+    border-radius: 19svw;
+    height: clamp(400px, 67svh, 610px);
+    max-height: clamp(400px, 67svh, 610px);
+    max-width: clamp(400px, 83%, 610px);
+    position: absolute;
+    width: clamp(450px, 75svh, 610px);
+    z-index: 1;
+  }
+
+  .orbitate-icon:nth-child( 5 ) {
+    right: calc(var(--icon-size) - var(--icon-size) / 2);
+    top: calc(var(--icon-size) - var(--icon-size) / 2);
+  }
+
+  .orbitate-icon:nth-child( 6 ) {
+    left: calc(var(--icon-size) - var(--icon-size) / 2);
+    top: calc(var(--icon-size) - var(--icon-size) / 2);
+  }
+
+  .orbitate-icon:nth-child( 7 ) {
+    bottom: calc(var(--icon-size) - var(--icon-size) / 2);
+    left: calc(var(--icon-size) - var(--icon-size) / 2);
+  }
+
+  .orbitate-icon:nth-child( 8 ) {
+    bottom: calc(var(--icon-size) - var(--icon-size) / 2);
+    right: calc(var(--icon-size) - var(--icon-size) / 2);
+  }
+}

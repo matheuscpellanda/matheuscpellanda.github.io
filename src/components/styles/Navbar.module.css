@@ -1,0 +1,46 @@
+.header {
+  display: none;
+}
+
+@media only screen and ( min-width : 1200px ) {
+
+  .header {
+    align-items: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    justify-content: flex-end;
+    max-height: 60px;
+  }
+
+  .navbar-button, .icon-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: Inter , sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 37px 0 0;
+    outline: none;
+  }
+
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar-button:hover, .icon-button:hover {
+    scale: 1.2;
+  }
+
+  .icon-translate-button > img {
+    height: 40px;
+    width: 40px;
+  }
+
+}

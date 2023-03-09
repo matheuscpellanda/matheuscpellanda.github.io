@@ -1,0 +1,34 @@
+{
+  "pt-br": {
+    "first-name": "Matheus",
+    "last-name": "Pellanda",
+    "age": 26,
+    "first-text": "Engenheiro de Produção formado pela Universidade Federal do Espírito Santo (Brasil), buscando capacitação como Full Stack em Desenvolvimento Web.",
+    "second-text": "Encantado pelo universo da programação, esforço e dedicação são palavras-chave.",
+    "third-text": "Atualmente estudando na Trybe.",
+    "fourth-text": "Se estiver interessado em parcerias ou projetos, entre em contato por e-mail:",
+    "first-button": "Enviar contato",
+    "second-button": "Ver projetos",
+    "email-placeholder": "Seu melhor e-mail",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "working": "Em andamento"
+  },
+  "en-us": {
+    "first-name": "Matheus",
+    "last-name": "Pellanda",
+    "age": 26,
+    "first-text": "Industrial engineer graduated at the Federal University of Espirito Santo (Brazil), seeking training as Full Stack in Web Development.",
+    "second-text": "Amazed by the universe of programming, effort and dedication are the key words.",
+    "third-text": "Currently studying at Trybe.",
+    "fourth-text": "If you are interested in partnerships or projects, you can contact me via email:",
+    "first-button": "Send contact",
+    "second-button": "See projects",
+    "email-placeholder": "Your best email",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "working": "Working On"
+  }
+}
