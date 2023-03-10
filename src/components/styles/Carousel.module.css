@@ -1,0 +1,52 @@
+.carousel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: flex-end;
+  position: relative;
+  width: 90%;
+}
+
+.carousel-body, .carousel-body-animating {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 95%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel-body-animating {
+  animation: hideAnimation 100ms linear;
+  animation-fill-mode: forwards;
+}
+
+.carousel-body {
+  animation: showAnimation 100ms linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showAnimation {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

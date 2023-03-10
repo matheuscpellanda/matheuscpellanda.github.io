@@ -24,6 +24,10 @@
   z-index: 0;
 }
 
+.orbitate-icon:hover {
+  z-index: 9;
+}
+
 .orbitate-icon:nth-child( 1 ) {
   left: calc(50% - var(--icon-size) / 2);
   top: calc(var(--icon-size-neg) / 2);

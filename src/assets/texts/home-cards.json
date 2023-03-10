@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "pt-br": {
+      "text": "solar 01 português"
+    },
+    "en-us": {
+      "text": "Mobile application developed to a Physical Store to manage Orders, Deliveries, Products Stock and integration with multiples platforms: Nuvemshop, Mercado Livre, MelhorEnvio (Shipping Company), PagSeguro (Payment Gateway), Mercado Pago (Payment Gateway) and others."
+    }
+  },
+  {
+    "id": 1,
+    "pt-br": {
+      "text": "solar 02 português"
+    },
+    "en-us": {
+      "text": "A RESTful API to controls and manage a Physical Store Database. Built respecting all SOLID principles, this API was developed to support another application (Mobile). It was integrated with GCP (Google Cloud Platform) and uses its main tools: Cloud Storage, Real Time - DB, FCM, Firebase Authentication, etc."
+    }
+  },
+  {
+    "id": 2,
+    "pt-br": {
+      "text": "solar 03 português"
+    },
+    "en-us": {
+      "text": "solar 03 inglês"
+    }
+  }
+]
