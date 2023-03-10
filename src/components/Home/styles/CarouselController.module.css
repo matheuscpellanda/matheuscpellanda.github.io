@@ -1,0 +1,38 @@
+.carousel-controller {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 50%;
+}
+
+.bullet {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: 10px;
+  justify-content: center;
+  margin: 0 0.2rem;
+  position: relative;
+  width: 10px;
+}
+
+.selected-bullet {
+  align-items: center;
+  background-color: white;
+  border: 2px solid rgb(0, 255, 213);
+  border-radius: 50%;
+  display: flex;
+  filter: blur(0.5px);
+  height: 11px;
+  justify-content: center;
+  margin: 0 0.2rem;
+  position: relative;
+  width: 11px;
+}

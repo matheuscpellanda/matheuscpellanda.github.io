@@ -1,0 +1,194 @@
+.presentation-info {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  z-index: 2;
+}
+
+.hello-title {
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: Raleway , sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  height: fit-content;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.hello-title > strong {
+  box-sizing: border-box;
+  color: #00fff0;
+  font-family: Raleway , sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.typed-title {
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: Ubuntu , sans-serif;
+  font-size: clamp(1rem, 5svh, 1.7rem);
+  font-style: normal;
+  font-weight: 500;
+  height: fit-content;
+  margin: 20px 0 15px;
+}
+
+.typed-title > p {
+  margin: 0;
+  margin-right: clamp(8px, 0.5rem, 17px);
+  padding: 0;
+}
+
+.typed-title > span {
+  background: linear-gradient(170deg, #00ffe0 30%, #00695d 100%);
+  background-clip: text;
+  margin: 0;
+  padding: 0;
+  -webkit-text-fill-color: transparent;
+}
+
+.presentation-text {
+  color: white;
+  font-family: Raleway , sans-serif;
+  font-size: clamp(16px, 2.5svh, 1.1svw);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 1.4rem;
+  position: relative;
+  text-align: justify;
+  z-index: 2;
+}
+
+.input-email {
+  background: #d9d9d9;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #5c5c5c;
+  font-family: Raleway , sans-serif;
+  font-size: clamp(16px, 2.5svh, 1.1svw);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 1rem;
+  outline: none;
+  padding: clamp(16px, 2.5svh, 1.1svw);
+  position: relative;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 2;
+}
+
+.input-email:hover {
+  scale: 1.05;
+}
+
+.button-contact, .button-projects {
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: Raleway , sans-serif;
+  font-size: clamp(16px, 2.5svh, 1.1svw);
+  font-style: normal;
+  font-weight: 600;
+  outline: none;
+  padding: clamp(16px, 2.5svh, 1.1svw);
+  position: relative;
+  transition: 0.3s;
+  width: 47.5%;
+  z-index: 2;
+}
+
+.button-projects {
+  background: linear-gradient(180deg, #00ffa3 0%, #569271 100%);
+  margin: 0 0 5%;
+}
+
+.button-contact {
+  background: linear-gradient(180deg, #00f0ff 0%, #348287 100%);
+  margin: 0 5% 5% 0;
+}
+
+.button-contact:active, .button-projects:active {
+  scale: 1.1;
+}
+
+.light01 {
+  background-color: #048498;
+  bottom: 0;
+  filter: blur(50px);
+  height: 230px;
+  position: absolute;
+  right: 0;
+  width: 230px;
+  z-index: 0;
+}
+
+.light02 {
+  background-color: #048498;
+  filter: blur(50px);
+  height: 185px;
+  position: absolute;
+  right: calc(50%);
+  top: 0;
+  width: 95px;
+  z-index: 0;
+}
+
+@media only screen and ( min-width : 1100px ) {
+
+  .presentation-info {
+    width: 45%;
+  }
+
+  .hello-title {
+    font-size: 2.7rem;
+  }
+
+  .hello-title > strong {
+    font-size: 4rem;
+    line-height: 40px;
+  }
+
+  .typed-title {
+    font-size: clamp(30px, 8svh, 3.3svw);
+    margin: 50px 0 30px;
+  }
+
+  .typed-title > p {
+    margin-right: clamp(15px, 1.2rem, 17px);
+  }
+
+  .input-email {
+    width: 70%;
+  }
+
+  .button-contact, .button-projects {
+    margin: 0;
+    width: 33.75%;
+  }
+
+  .button-contact {
+    margin-right: 2.5%;
+  }
+
+  .button-contact:active, .button-projects:active {
+    scale: none;
+  }
+
+  .button-contact:hover, .button-projects:hover {
+    scale: 1.1;
+  }
+}

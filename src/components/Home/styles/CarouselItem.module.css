@@ -1,0 +1,9 @@
+.project-card {
+  background-color: yellow;
+  display: flex;
+  height: 95%;
+  margin: 0 2.5vw;
+  min-width: 85vw;
+  position: relative;
+  width: 85vw;
+}

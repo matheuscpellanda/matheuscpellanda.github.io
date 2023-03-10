@@ -13,7 +13,8 @@
     "about": "Sobre",
     "projects": "Projetos",
     "contact": "Contato",
-    "working": "Em andamento"
+    "working": "Em andamento",
+    "second-section-title": "Principais Projetos"
   },
   "en-us": {
     "first-name": "Matheus",
@@ -29,6 +30,7 @@
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
-    "working": "Working On"
+    "working": "Working On",
+    "second-section-title": "Main Projects and Languages"
   }
 }
