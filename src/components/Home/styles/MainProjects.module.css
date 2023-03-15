@@ -11,11 +11,33 @@
 .second-section-title {
   color: white;
   font-family: Ubuntu , sans-serif;
-  font-size: clamp(10px, 8svh, 50px);
+  font-size: clamp(10px, 7svh, 40px);
   font-style: normal;
   font-weight: 400;
   margin: 3rem 0 1rem;
   text-align: center;
   width: fit;
   z-index: 2;
+}
+
+.main-projects-cards-container {
+  display: none;
+}
+
+@media only screen and ( min-width : 1100px ) {
+
+  .second-section-title {
+    font-size: clamp(10px, 8svh, 75px);
+    margin-top: 5rem;
+  }
+
+  .main-projects-cards-container {
+    align-items: center;
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+
 }

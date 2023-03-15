@@ -50,11 +50,11 @@
   animation: animate_shining 5s linear infinite;
   animation-fill-mode: both;
   background: #009cb5;
-  filter: blur(110px);
+  filter: blur(80px);
   height: 80%;
   position: absolute;
-  width: 90%;
-  z-index: 0;
+  width: 90svw;
+  z-index: 1;
 }
 
 @keyframes animate_shining {
@@ -106,12 +106,13 @@
   }
 
   .hero-image-container {
-    width: clamp(350px, 20svw, 600px);
+    width: clamp(300px, 20vw, 600px);
   }
 
   .hero-image-light {
     filter: blur(110px);
     height: 75%;
+    user-select: none;
     width: 65%;
   }
 }

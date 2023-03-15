@@ -1,8 +1,9 @@
 [
   {
     "id": 0,
+    "main-language": "flutter",
     "pt-br": {
-      "text": "solar 01 português"
+      "text": "Aplicação mobile desenvolvida para uma Loja Física para gerenciar Pedidos, Entregas, Estoque de Produtos e integração com múltiplas plataformas: Nuvemshop, Mercado Livre, MelhorEnvio (Empresa de Transporte), PagSeguro (Gateway de Pagamento), Mercado Pago (Gateway de Pagamento) e outras."
     },
     "en-us": {
       "text": "Mobile application developed to a Physical Store to manage Orders, Deliveries, Products Stock and integration with multiples platforms: Nuvemshop, Mercado Livre, MelhorEnvio (Shipping Company), PagSeguro (Payment Gateway), Mercado Pago (Payment Gateway) and others."
@@ -10,8 +11,9 @@
   },
   {
     "id": 1,
+    "main-language": "javascript",
     "pt-br": {
-      "text": "solar 02 português"
+      "text": "Uma API RESTful para controlar e gerenciar o Banco de Dados de uma Loja Física. Desenvolvida respeitando todos os princípios SOLID, esta API foi desenvolvida para suportar outra aplicação (Mobile). Foi integrada à GCP (Google Cloud Platform) e utiliza suas principais ferramentas: Cloud Storage, Real Time - DB, FCM, Firebase Authentication, etc."
     },
     "en-us": {
       "text": "A RESTful API to controls and manage a Physical Store Database. Built respecting all SOLID principles, this API was developed to support another application (Mobile). It was integrated with GCP (Google Cloud Platform) and uses its main tools: Cloud Storage, Real Time - DB, FCM, Firebase Authentication, etc."
@@ -19,11 +21,12 @@
   },
   {
     "id": 2,
+    "main-language": "react",
     "pt-br": {
-      "text": "solar 03 português"
+      "text": "Web site desenvolvido para demonstrar os recursos de uma API RESTful. Foi desenvolvido utilizando ReactJS, React Router, React Hooks e React Context API."
     },
     "en-us": {
-      "text": "solar 03 inglês"
+      "text": "Web site developed to demonstrate the features of a RESTful API. It was developed using ReactJS, React Router, React Hooks and React Context API."
     }
   }
 ]

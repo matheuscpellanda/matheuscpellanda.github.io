@@ -9,27 +9,29 @@ export default function Carousel({ children = [] }) {
   const [currentItem, setCurrentItem] = useState(0);
   const [onChangingItem, setOnChangingItem] = useState(false);
   const [hasTouched, setHasTouched] = useState(false);
-  const [whereTouchStarts, setWhereTouchStarts] = useState(0);
-  const [whereTouchEnds, setWhereTouchEnds] = useState(0);
+  const [whereTouchStarts, setWhereTouchStarts] = useState({ x: 0, y: 0 });
+  const [whereTouchEnds, setWhereTouchEnds] = useState({ x: 0, y: 0 });
 
   const handleTouchStarts = useCallback(({ touches }) => {
     if (!hasTouched) {
       setHasTouched(true);
-      setWhereTouchStarts(touches[0].clientX);
+      setWhereTouchStarts({ x: touches[0].clientX, y: touches[0].clientY });
     }
   }, [hasTouched]);
 
   const handleTouchEnds = useCallback(() => {
     setHasTouched(false);
-    setWhereTouchStarts(0);
-    setWhereTouchEnds(0);
-    const precision = 50;
-    if (Math.abs(whereTouchStarts - whereTouchEnds) < precision) return;
+    setWhereTouchStarts({ x: 0, y: 0 });
+    setWhereTouchEnds({ x: 0, y: 0 });
+    const precisionX = 50;
+    const toleranceY = 150;
+    if (Math.abs(whereTouchStarts.x - whereTouchEnds.x) < precisionX
+    || Math.abs(whereTouchStarts.y - whereTouchEnds.y) > toleranceY) return;
     setOnChangingItem(true);
     setTimeout(() => {
       setOnChangingItem(false);
     }, TIME_ANIMATION);
-    if (whereTouchStarts > whereTouchEnds) {
+    if (whereTouchStarts.x > whereTouchEnds.x) {
       const nextItem = currentItem === (children.length - 1) ? 0 : currentItem + 1;
       setCurrentItem(nextItem);
     } else {
@@ -46,7 +48,11 @@ export default function Carousel({ children = [] }) {
         }
         onTouchEnd={ handleTouchEnds }
         onTouchStart={ handleTouchStarts }
-        onTouchMove={ (e) => setWhereTouchEnds(e.touches[0].clientX) }
+        onTouchMove={
+          (({ touches }) => setWhereTouchEnds(
+            { x: touches[0].clientX, y: touches[0].clientY },
+          ))
+        }
       >
         { children[currentItem] }
       </div>

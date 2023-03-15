@@ -5,6 +5,7 @@ import homeTexts from '../../assets/texts/home-presentation-text.json';
 import homeCards from '../../assets/texts/home-cards.json';
 import Carousel from '../Carousel';
 import CarouselItem from '../CarouselItem';
+import MainProjectsCard from './MainProjectsCard';
 
 export default function MainProjects() {
   const { language } = useContext(LanguageContext);
@@ -19,11 +20,21 @@ export default function MainProjects() {
             <CarouselItem
               key={ card.id }
               text={ card[language].text }
-              image={ card.image }
             />
           ))
         }
       </Carousel>
+      <div className={ style['main-projects-cards-container'] }>
+        {
+          homeCards.map((card) => (
+            <MainProjectsCard
+              key={ card.id }
+              text={ card[language].text }
+              language={ card['main-language'] }
+            />
+          ))
+        }
+      </div>
     </div>
   );
 }

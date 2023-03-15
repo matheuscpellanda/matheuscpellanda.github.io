@@ -1,18 +1,20 @@
-.project-card {
+.main-project-card {
   align-items: center;
+  cursor: pointer;
   display: flex;
-  height: 100%;
+  height: 80%;
   justify-content: center;
+  margin: 0 auto;
   position: relative;
-  width: 100%;
+  width: 28%;
 }
 
-.project-text-container {
+.main-project-text-container {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: -2px -2px 2px rgba(0, 255, 255, 0.6);
   box-sizing: border-box;
   filter: blur(2.5px);
-  height: 90%;
+  height: 80%;
   padding: 0;
   position: relative;
   translate: 10px 10px;
@@ -20,38 +22,53 @@
   z-index: 1;
 }
 
-.project-text {
+.main-project-text {
   align-items: flex-start;
   box-sizing: border-box;
   color: white;
   display: flex;
   font-family: Ubuntu , sans-serif;
-  font-size: clamp(3vw, 2.8svh, 5.3vw);
+  font-size: clamp(1vw, 3svh, 1.35vw);
   font-style: normal;
   font-weight: 400;
-  height: 100%;
-  left: 5%;
-  letter-spacing: 0.05em;
+  height: 80%;
+  left: 10px;
+  letter-spacing: 0.1em;
   line-height: 30px;
   margin: 0;
-  padding: 3%;
+  padding: 8%;
   position: absolute;
   text-align: justify;
-  top: 4%;
-  translate: 10px 10px;
-  width: 90%;
+  top: 7%;
+  width: 100%;
 }
 
-.project-container-frame {
+.main-project-container-frame {
   background-color: transparent;
   border-color: #00fff0;
   border-style: solid;
   border-width: 5px 0 0 5px;
   box-sizing: border-box;
   filter: blur(1px);
-  height: 90%;
+  height: 80%;
   position: absolute;
   translate: -10px -10px;
   width: 90%;
   z-index: 0;
+}
+
+.main-project-card:hover {
+  scale: 1.1;
+}
+
+.main-project-card:hover .main-project-text-container {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.main-project-card-images {
+  bottom: 10%;
+  height: clamp(3vw, 8svh, 6vw);
+  position: absolute;
+  right: 5%;
+  width: clamp(3vw, 8svh, 6vw);
 }
