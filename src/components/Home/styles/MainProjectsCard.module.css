@@ -28,12 +28,12 @@
   color: white;
   display: flex;
   font-family: Ubuntu , sans-serif;
-  font-size: clamp(1vw, 3svh, 1.35vw);
+  font-size: clamp(1vh, 1.1vw, 2.5vh);
   font-style: normal;
   font-weight: 400;
   height: 80%;
   left: 10px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   line-height: 30px;
   margin: 0;
   padding: 8%;
