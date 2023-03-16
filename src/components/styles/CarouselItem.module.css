@@ -26,7 +26,7 @@
   color: white;
   display: flex;
   font-family: Ubuntu , sans-serif;
-  font-size: clamp(3vw, 2.7svh, 5vw);
+  font-size: clamp(12px, 4svh, 2.6svh);
   font-style: normal;
   font-weight: 400;
   height: 100%;
