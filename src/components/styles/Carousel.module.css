@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 70%;
   justify-content: flex-end;
+  margin: auto 0;
   position: relative;
   width: 90%;
 }

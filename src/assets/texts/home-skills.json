@@ -1,0 +1,88 @@
+[
+  {
+    "name": "flutter",
+    "url": "https://flutter.dev/"
+  },
+  {
+    "name": "javascript",
+    "fantasy_name": "JavaScript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "react",
+    "fantasy_name": "ReactJS",
+    "url": "https://reactjs.org/"
+  },
+  {
+    "name": "redux",
+    "fantasy_name": "Redux JS",
+    "url": "https://redux.js.org/"
+  },
+  {
+    "name": "docker",
+    "url": "https://www.docker.com/"
+  },
+  {
+    "name": "trello",
+    "url": "https://trello.com/"
+  },
+  {
+    "name": "figma",
+    "url": "https://www.figma.com/"
+  },
+  {
+    "name": "html5",
+    "fantasy_name": "HTML5",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+  },
+  {
+    "name": "ubuntu",
+    "url": "https://ubuntu.com/"
+  },
+  {
+    "name": "css3",
+    "fantasy_name": "CSS3",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+  },
+  {
+    "name": "firebase",
+    "url": "https://firebase.google.com/"
+  },
+  {
+    "name": "git",
+    "url": "https://git-scm.com/"
+  },
+  {
+    "name": "github",
+    "fantasy_name": "GitHub",    
+    "url": "https://www.github.com"
+  },
+  {
+    "name": "jest",
+    "url": "https://jestjs.io/"
+  },
+  {
+    "name": "nodejs",
+    "fantasy_name": "NodeJS",
+    "url": "https://nodejs.org/en/"
+  },
+  {
+    "name": "gcp",
+    "fantasy_name": "Google Cloud Platform",
+    "url": "https://cloud.google.com/"
+  },
+  {
+    "name": "slack",
+    "url": "https://slack.com/"
+  },
+  {
+    "name": "express",
+    "fantasy_name": "ExpressJS",
+    "url": "https://expressjs.com/"
+  },
+  {
+    "name": "eslint",
+    "fantasy_name": "ESLint",
+    "url": "https://eslint.org/"
+  }
+]

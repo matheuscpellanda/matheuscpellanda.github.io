@@ -1,0 +1,48 @@
+.slider {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  padding: 20% 0;
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  animation: slide 30s linear infinite;
+  display: flex;
+  height: 100%;
+}
+
+.container2 {
+  animation: slide2 30s linear infinite;
+  display: flex;
+  height: 100%;
+}
+
+.slider:hover > .container, .slider:hover .container2 {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

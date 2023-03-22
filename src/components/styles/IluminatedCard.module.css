@@ -1,0 +1,60 @@
+.iluminated-card {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: clamp(200px, 35vh, 300px);
+  justify-content: center;
+  margin: 0 2rem;
+  padding: 0;
+  position: relative;
+  width: clamp(100px, 50vw, 200px);
+}
+
+.iluminated-card svg {
+  height: 90px;
+  margin: auto 0;
+  width: 90px;
+}
+
+.light {
+  background-color: #008195;
+  border-radius: 20px;
+  filter: blur(30px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: #ffffff5d;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: clamp(100px, 50vw, 200px);
+  z-index: 1;
+}
+
+.iluminated-card-title {
+  color: white;
+  font-family: Ubuntu , sans-serif;
+  font-size: clamp(10px, 5svh, 30px);
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 1.5rem;
+  text-align: center;
+}
+
+.iluminated-card-image {
+  margin: 0;
+}
